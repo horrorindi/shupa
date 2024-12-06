@@ -5,45 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Установка игры</title>
     <style>
+        /* Основные стили страницы */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #4e5d6b, #3f5359); /* Градиентный фон */
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             text-align: center;
-            padding: 50px;
         }
 
         h1 {
-            color: #333;
-            font-size: 2em;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Тень для текста */
         }
 
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            color: #b0b0b0;
+        }
+
+        /* Контейнер для кнопок */
         .buttons-container {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
+            gap: 30px;
+            animation: fadeIn 1.5s ease-out; /* Анимация для кнопок */
         }
 
+        /* Стили для кнопок */
         .install-button {
-            display: inline-block;
-            padding: 15px 30px;
+            padding: 20px 40px;
             font-size: 1.2em;
-            color: white;
-            border-radius: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
             text-decoration: none;
-            text-align: center;
+            border-radius: 10px;
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
+        /* Кнопка для Android */
         .android-button {
-            background-color: #3ddc84;
+            background: linear-gradient(135deg, #3ddc84, #2bbd72);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
         }
 
+        /* Кнопка для iOS */
         .ios-button {
-            background-color: #007aff;
+            background: linear-gradient(135deg, #007aff, #005bb5);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
         }
 
         .install-button:hover {
-            opacity: 0.8;
+            transform: translateY(-5px); /* Поднятие кнопки при наведении */
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .install-button:active {
+            transform: translateY(2px); /* Плавное опускание при клике */
+        }
+
+        /* Анимация появления кнопок */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Подпись внизу */
+        footer {
+            margin-top: 50px;
+            font-size: 1em;
+            color: #b0b0b0;
+            animation: fadeIn 2s ease-out;
+        }
+
+        footer a {
+            color: #e6e6e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #ffffff;
         }
     </style>
 </head>
@@ -53,13 +111,19 @@
     <p>Выберите свою платформу для скачивания игры:</p>
 
     <div class="buttons-container">
+        <!-- Кнопка для Android -->
         <a href="https://play.google.com/store/apps/details?id=com.example.game" class="install-button android-button" target="_blank">
             Скачать для Android
         </a>
+        <!-- Кнопка для iOS -->
         <a href="https://apps.apple.com/us/app/example-game/id1234567890" class="install-button ios-button" target="_blank">
             Скачать для iOS
         </a>
     </div>
+
+    <footer>
+        Designed by <a href="https://github.com/smokedevv" target="_blank">smokedev1</a> | HorrorIndi Games 2024
+    </footer>
 
 </body>
 </html>
