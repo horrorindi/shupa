@@ -32,13 +32,23 @@ body, html {
     }
 }
 
-.overlay {
+.neon-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+    0% {
+        background: rgba(0, 0, 0, 0.6);
+    }
+    100% {
+        background: rgba(255, 0, 255, 0.4);
+    }
 }
 
 /* Content Styling */
@@ -52,7 +62,7 @@ body, html {
 }
 
 .game-title {
-    font-size: 60px;
+    font-size: 80px;
     font-weight: bold;
     color: #f04e23;
     text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8), 0px 5px 15px rgba(0, 0, 0, 0.4);
@@ -85,7 +95,7 @@ body, html {
     }
 }
 
-/* Buttons Container */
+/* 3D Button Styling */
 .buttons-container {
     display: flex;
     justify-content: center;
@@ -100,22 +110,29 @@ body, html {
     text-decoration: none;
     padding: 20px 40px;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     background: #f04e23;
     color: #fff;
     position: relative;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease-in-out;
-    overflow: hidden;
     letter-spacing: 1px;
+    perspective: 1500px;
 }
 
-.download-button img {
-    width: 35px;
-    height: 35px;
-    margin-right: 15px;
-    z-index: 10;
+.download-button span {
+    transform: rotateX(0deg);
+    transition: transform 0.2s;
+}
+
+.download-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.download-button:active {
+    transform: translateY(2px);
 }
 
 .android {
@@ -128,38 +145,8 @@ body, html {
     border: 2px solid #222;
 }
 
-.download-button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    animation: ripple 0.6s linear infinite;
-    z-index: 0;
-}
-
-@keyframes ripple {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(0);
-        opacity: 0;
-    }
-}
-
-.download-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
-}
-
-.download-button:active {
-    transform: translateY(2px);
+.download-button:hover span {
+    transform: rotateX(360deg);
 }
 
 .android:hover {
