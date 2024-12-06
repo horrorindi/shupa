@@ -57,7 +57,7 @@ body, html {
     color: #f04e23;
     text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8), 0px 5px 15px rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out, neon 1.5s ease-in-out infinite alternate;
 }
 
 .description {
@@ -70,6 +70,19 @@ body, html {
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+/* Neon Glowing Effect */
+@keyframes neon {
+    0% {
+        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8), 0px 5px 15px rgba(0, 0, 0, 0.6);
+    }
+    50% {
+        text-shadow: 0px 0px 15px #f04e23, 0px 0px 30px #f04e23;
+    }
+    100% {
+        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8), 0px 5px 15px rgba(0, 0, 0, 0.4);
+    }
 }
 
 /* Buttons Container */
@@ -95,6 +108,7 @@ body, html {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease-in-out;
     overflow: hidden;
+    letter-spacing: 1px;
 }
 
 .download-button img {
@@ -158,19 +172,11 @@ body, html {
     border: 2px solid #222;
 }
 
-/* Neon Glowing Effect */
-.game-title {
-    animation: neon 1.5s ease-in-out infinite alternate;
+/* Smooth Scroll for Buttons */
+.buttons-container a {
+    transition: transform 0.2s ease-in-out;
 }
 
-@keyframes neon {
-    0% {
-        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8), 0px 5px 15px rgba(0, 0, 0, 0.6);
-    }
-    50% {
-        text-shadow: 0px 0px 15px #f04e23, 0px 0px 30px #f04e23;
-    }
-    100% {
-        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8), 0px 5px 15px rgba(0, 0, 0, 0.6);
-    }
+.buttons-container a:hover {
+    transform: scale(1.1);
 }
