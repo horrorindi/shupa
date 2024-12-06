@@ -1,145 +1,108 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
+<!DOCTYPE html><html lang="en"><head>
+    <title></title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Установка игры</title>
-    <style>
-        /* Основные стили страницы */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: white;
-            text-align: center;
-            background: url('https://example.com/game-background.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-
-        /* Добавление градиента поверх картинки */
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4); /* полупрозрачный черный */
-        }
-
-        h1 {
-            font-size: 3em;
-            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Тень для текста */
-            margin-bottom: 20px;
-            animation: fadeIn 1.5s ease-out;
-        }
-
-        p {
-            font-size: 1.3em;
-            margin-bottom: 50px;
-            color: #ddd;
-            animation: fadeIn 2s ease-out;
-        }
-
-        /* Контейнер для кнопок */
-        .buttons-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            animation: fadeIn 2.5s ease-out;
-        }
-
-        /* Стили для кнопок */
-        .install-button {
-            padding: 20px 40px;
-            font-size: 1.5em;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-decoration: none;
-            border-radius: 15px;
-            display: inline-block;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        /* Кнопка для Android */
-        .android-button {
-            background: linear-gradient(135deg, #3ddc84, #2bbd72);
-        }
-
-        /* Кнопка для iOS */
-        .ios-button {
-            background: linear-gradient(135deg, #007aff, #005bb5);
-        }
-
-        .install-button:hover {
-            transform: translateY(-10px); /* Поднятие кнопки при наведении */
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
-        }
-
-        .install-button:active {
-            transform: translateY(5px); /* Плавное опускание при клике */
-        }
-
-        /* Анимация появления кнопок */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Подпись внизу */
-        footer {
-            margin-top: 80px;
-            font-size: 1.2em;
-            color: #ddd;
-            animation: fadeIn 3s ease-out;
-        }
-
-        footer a {
-            color: #e6e6e6;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer a:hover {
-            color: #ffffff;
-        }
-
-    </style>
-</head>
-<body>
-
-    <div class="overlay"></div> <!-- Полупрозрачный черный фон -->
-
-    <h1>Установите нашу игру</h1>
-    <p>Выберите свою платформу для скачивания игры:</p>
-
-    <div class="buttons-container">
-        <!-- Кнопка для Android -->
-        <a href="https://play.google.com/store/apps/details?id=com.example.game" class="install-button android-button" target="_blank">
-            Скачать для Android
-        </a>
-        <!-- Кнопка для iOS -->
-        <a href="https://apps.apple.com/us/app/example-game/id1234567890" class="install-button ios-button" target="_blank">
-            Скачать для iOS
-        </a>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="meta-keywords" name="keywords" content="">
+    
+    <meta id="meta-description" name="description" content="">
+    
+    <link rel="icon" type="image/x-icon" href="undefined/index.html">
+    <link rel="stylesheet" href="main-m4codl29.css">
+    <style data-styled="ivoOXx fNGLdp cOKCgB  boKZAu jHCZrL iMaEUe PXsbt iZASuI ehtzge bxeGYB cbbBlW deXuYZ hApwOg cUsEs icbRkp btptnG jYUBBZ eyzrsg  itzSYI isaKnF fhoUos keJdJn blQwxs iLIWOK klOQRe faBniA jXcQry cmSLJh eOZCoc kjvlIr ditDrr kByoVl bzTdUd dXYeBk bdivov hKBCfs cwWBOh jhArze ineHXG goUXAt" data-styled-version="4.3.2">
+/* sc-component-id: sc-1vrgkll-0 */
+.ivoOXx{position:fixed;z-index:19;right:20px;top:auto;bottom:0;-webkit-transform:none;-ms-transform:none;transform:none;margin-bottom:20px;}
+/* sc-component-id: sc-1vrgkll-1 */
+.fNGLdp{width:50px;height:50px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;outline:none;visibility:hidden;opacity:0;-webkit-transition:opacity .2s,visibility .2s;transition:opacity .2s,visibility .2s;background:transparent linear-gradient(180deg, #FFFFFF 0%, #EBE6DE 100%)  0% 0% no-repeat;border:1px solid #EBE6DE;border-radius:50%;box-shadow:0px 4px 8px rgba(7,14,12,0.15);} .fNGLdp > div svg{-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;fill:#8D816F;} .fNGLdp:hover{background:#FFFFFF;}
+/* sc-component-id: sc-1ly7lpo-0 */
+.boKZAu{position:relative;}
+/* sc-component-id: sc-1ly7lpo-1 */
+.jHCZrL{position:absolute;visibility:hidden;width:0;height:0;top:-0px;left:50%;}
+/* sc-component-id: sc-zyxusa-0 */
+.PXsbt{word-break:break-word;padding:80px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;overflow:hidden;} @media only screen and (max-width:457px){.PXsbt{padding:60px 0;}}
+/* sc-component-id: sc-1x4p0l3-0 */
+.iMaEUe{background:linear-gradient(rgba(7,14,12,0.69),rgba(7,14,12,0.69)),url(https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTUzNXwwfDF8c2VhcmNofDF8fEhvcnJvcnxlbnwwfHx8fDE3MzMzOTgwNjJ8MA&ixlib=rb-4.0.3&q=80&w=1080) no-repeat center/cover;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0;position:relative;} @media only screen and (max-width:1440px){.iMaEUe{background:linear-gradient(rgba(7,14,12,0.69),rgba(7,14,12,0.69)),url(https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTUzNXwwfDF8c2VhcmNofDF8fEhvcnJvcnxlbnwwfHx8fDE3MzMzOTgwNjJ8MA&ixlib=rb-4.0.3&q=80&w=1080) no-repeat center/cover;}} @media only screen and (max-width:768px){.iMaEUe{background:linear-gradient(rgba(7,14,12,0.69),rgba(7,14,12,0.69)),url(https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTUzNXwwfDF8c2VhcmNofDF8fEhvcnJvcnxlbnwwfHx8fDE3MzMzOTgwNjJ8MA&ixlib=rb-4.0.3&q=80&w=1080) no-repeat center/cover;}} @media only screen and (max-width:480px){.iMaEUe{background:linear-gradient(rgba(7,14,12,0.69),rgba(7,14,12,0.69)),url(https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTUzNXwwfDF8c2VhcmNofDF8fEhvcnJvcnxlbnwwfHx8fDE3MzMzOTgwNjJ8MA&ixlib=rb-4.0.3&q=80&w=1080) no-repeat center/cover;}} @media only screen and (min-width:1025px){.iMaEUe{background-attachment:fixed !important;}} @media only screen and (max-width:768px){.iMaEUe{padding-top:-80px;}} .iMaEUe nav{margin-right:30px;} @media only screen and (max-width:650px){.iMaEUe{padding-top:-30px;}}
+/* sc-component-id: sc-1x4p0l3-1 */
+.btptnG{position:relative;box-sizing:border-box;padding:40px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;} @media only screen and (max-width:1024px){.btptnG{min-height:initial;padding:80px 40px;}} @media only screen and (max-width:457px){.btptnG{padding:60px 20px;}} .btptnG .buttons-block{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:0 auto;} .btptnG .buttons-wrapper{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:0 auto;}
+/* sc-component-id: sc-1x4p0l3-2 */
+.jYUBBZ{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;box-sizing:border-box;text-align:center;padding:250px 0;} @media only screen and (max-width:1024px){.jYUBBZ{padding:0;}}
+/* sc-component-id: sc-1x4p0l3-3 */
+.eyzrsg{width:100%;max-width:1000px;} .eyzrsg .control-container{width:100%;}
+/* sc-component-id: sc-et7lxk-0 */
+.iZASuI{width:100%;padding-top:0;box-shadow:none;position:fixed !important;z-index:9;top:0;left:0;right:0;} @media only screen and (max-width:768px){.iZASuI{padding-top:0;}} .iZASuI .rf-add-btn{white-space:nowrap;}
+/* sc-component-id: sc-et7lxk-1 */
+.ehtzge{width:100%;max-width:1500px;position:relative;padding:0 20px;margin:0 auto;z-index:19;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;box-sizing:border-box;} .ehtzge .lazy-figure{font-size:0;} @media only screen and (max-width:1440px){.ehtzge{width:100%;max-width:1200px;}} @media only screen and (max-width:1024px){.ehtzge{-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;}}
+/* sc-component-id: sc-1akbv98-2 */
+.bxeGYB{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;width:100%;margin:0px 20px;} @media only screen and (max-width:1024px){.bxeGYB{display:none;}} .bxeGYB .header-socials{padding:10px 0;}
+/* sc-component-id: sc-1akbv98-10 */
+.cUsEs{margin:10px 0 10px auto;z-index:2;display:block;color:#FFFFFF;}
+/* sc-component-id: sc-1akbv98-12 */
+.hApwOg{display:none;} @media only screen and (max-width:1024px){.hApwOg{display:block;}}
+/* sc-component-id: sc-global-4200155263 */
+.editable-control-container{display:block;} .text-customization-link-wrapper{display:inline;}
+/* sc-component-id: sc-1dv0b3o-0 */
+.cbbBlW{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} .cbbBlW .rf-add-btn{padding:15px;margin-left:10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;} .cbbBlW .rf-add-btn .icon{margin-right:initial;}
+/* sc-component-id: sc-1dv0b3o-1 */
+.deXuYZ{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;box-sizing:border-box;} @media only screen and (max-width:1024px){.deXuYZ{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:0 0 0 28px;}} @media only screen and (max-width:610px){.deXuYZ{padding:0 0 0 12px;}} .deXuYZ .link{width:22px;height:36px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-text-decoration:none;text-decoration:none;margin:5px;fill:#FFFFFF;} @media only screen and (max-width:1024px){.deXuYZ .link{fill:#070E0C;}} @media (orientation:landscape) and (max-width:812px){.deXuYZ .link{fill:#070E0C;}}
+/* sc-component-id: sc-1xk50io-0 */
+.itzSYI{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;z-index:1;padding-top:30px;} .itzSYI .buttons-wrapper{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;} .itzSYI .add-button-wrap{margin:15px;} .itzSYI .add-button-wrap > div{width:100%;box-sizing:border-box;height:50px;padding:16px 30px;}
+/* sc-component-id: sc-1xk50io-1 */
+.isaKnF{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:-15px 0;margin:-15px 0;}
+/* sc-component-id: sc-1xk50io-2 */
+.fhoUos{margin:15px;} @media only screen and (max-width:550px){.fhoUos{max-width:300px;}} .fhoUos .control-container{width:100%;} .fhoUos .link-wrapper{width:100%;} .fhoUos .link{border-radius:50px;white-space:nowrap;none;color:#FFFFFF;background:linear-gradient(-180deg,#BEA990 0%,#8D816F 96%);box-shadow:none;background-repeat:no-repeat;-webkit-text-decoration:none;text-decoration:none;width:100%;max-width:300px;padding:0 40px;overflow:hidden;text-overflow:ellipsis;box-sizing:border-box;text-align:center;height:50px;line-height:50px;cursor:pointer;-webkit-text-decoration:none !important;text-decoration:none !important;font-weight:400;background-repeat:no-repeat !important;font-size:14px;display:block;} @media only screen and (min-width:767px){.fhoUos .link:hover{color:#FFFFFF;background:#8D816F;box-shadow:none;}} .fhoUos .link:active{color:#FFFFFF;background:#BEA990;box-shadow:none;}.keJdJn{margin:15px;} @media only screen and (max-width:550px){.keJdJn{max-width:300px;}} .keJdJn .control-container{width:100%;} .keJdJn .link-wrapper{width:100%;} .keJdJn .link{border-radius:50px;white-space:nowrap;none;color:#484848;background:linear-gradient(-180deg,#FAFAFA 0%,#EBE6DE 96%);box-shadow:none;background-repeat:no-repeat;-webkit-text-decoration:none;text-decoration:none;width:100%;max-width:300px;padding:0 40px;overflow:hidden;text-overflow:ellipsis;box-sizing:border-box;text-align:center;height:50px;line-height:50px;cursor:pointer;-webkit-text-decoration:none !important;text-decoration:none !important;font-weight:400;background-repeat:no-repeat !important;font-size:14px;display:block;} @media only screen and (min-width:767px){.keJdJn .link:hover{color:#FFFFFF;background:#717070;box-shadow:none;}} .keJdJn .link:active{color:#484848;background:#EBE6DE;box-shadow:none;}
+/* sc-component-id: sc-ewl9y2-0 */
+.klOQRe{width:95%;max-width:1400px;margin:0 auto;box-sizing:border-box;} @media only screen and (max-width:1440px){.klOQRe{width:90%;max-width:1200px;}} @media only screen and (max-width:1024px){.klOQRe{width:100%;padding-right:40px;padding-left:40px;}} @media only screen and (max-width:457px){.klOQRe{padding-right:20px;padding-left:20px;}}
+/* sc-component-id: sc-hu80p2-0 */
+.blQwxs{background:#070E0C;} @media only screen and (max-width:600px){}
+/* sc-component-id: sc-hu80p2-1 */
+.iLIWOK{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;width:100% !important;} .iLIWOK .buttons-block{margin-left:-15px;} @media only screen and (max-width:1024px){.iLIWOK{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}} .iLIWOK .control-container{margin-bottom:30px;width:100%;} .iLIWOK .control-container p{margin-bottom:0;} .iLIWOK > .control-container{width:40%;max-width:414px;} @media only screen and (min-width:1024px){.iLIWOK > .control-container{margin:0 30px 0 0;}} @media only screen and (max-width:1024px){.iLIWOK > .control-container{max-width:initial;width:100%;}} .iLIWOK > .control-container > h1{width:100%;max-width:unset;} @media only screen and (min-width:1024px){.iLIWOK > .control-container > h1{margin:0;}} @media only screen and (max-width:1024px){.iLIWOK > .control-container > h1{max-width:unset;width:100%;}}
+/* sc-component-id: sc-hu80p2-2 */
+.faBniA{width:40%;max-width:414px;} @media only screen and (max-width:1024px){.faBniA{width:100%;max-width:100%;}}
+/* sc-component-id: sc-hu80p2-4 */
+.jXcQry{width:60%;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;max-width:900px;padding:0 0 0 60px;box-sizing:border-box;} @media only screen and (max-width:1024px){.jXcQry{padding:0;width:100%;max-width:100%;}}
+/* sc-component-id: sc-hu80p2-5 */
+.eOZCoc{height:100%;width:3px;background:#BEA990;position:absolute;left:-40px;top:0;} @media only screen and (max-width:1024px){.eOZCoc{width:90%;height:3px;position:initial;left:initial;top:initial;margin:20px 0;margin-left:auto;}}
+/* sc-component-id: sc-hu80p2-6 */
+.cmSLJh{position:relative;}
+/* sc-component-id: sc-1byvlos-0 */
+.kjvlIr{word-break:break-word;width:100%;padding:50px 0 50px 0;background-color:rgba(7,14,12,1);} @media only screen and (max-width:1024px){.kjvlIr{padding:50px 0 50px 0;}} @media only screen and (max-width:457px){.kjvlIr{padding-top:50px;padding-bottom:20px;}}
+/* sc-component-id: sc-1byvlos-1 */
+.bzTdUd{width:100%;margin-top:30px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;} .bzTdUd:empty{display:none;} @media only screen and (max-width:800px){.bzTdUd{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}
+/* sc-component-id: sc-1byvlos-3 */
+.ditDrr{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+/* sc-component-id: sc-1lgm12j-2 */
+.kByoVl{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;} .kByoVl .add-button-wrap{margin-left:30px;}
+/* sc-component-id: sc-15u4boq-0 */
+.bdivov{padding:90px 80px;word-break:break-word;background:linear-gradient(180deg,#8980f7 0%,#4136c1 100%);width:100%;z-index:10;max-width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;} @media only screen and (max-width:769px){.bdivov{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:70px 20px;}}
+/* sc-component-id: sc-15u4boq-2 */
+.jhArze{position:relative;color:#ffffff;font-size:18px;line-height:22px;margin:0 40px 0 15px;padding-left:15px;} @media only screen and (max-width:768px){.jhArze{font-size:16px;}} @media only screen and (max-width:768px){.jhArze{text-align:center;padding:0;margin:0 auto 15px 15px;}} @media only screen and (max-width:980px){.jhArze{margin:30px 15px;}} @media only screen and (min-width:769px){.jhArze:before{content:'';position:absolute;left:0;width:2px;top:0;bottom:0;background-color:#c1c9e0;}} @media only screen and (max-width:768px){.jhArze:before{content:'';position:absolute;top:-30px;left:46%;width:60px;height:1px;background-color:#c1c9e0;}} @media only screen and (max-width:600px){.jhArze:before{left:44%;}} @media only screen and (max-width:458px){.jhArze:before{left:42%;}}
+/* sc-component-id: sc-15u4boq-3 */
+.ineHXG{font-weight:500;color:#ffffff;}
+/* sc-component-id: sc-15u4boq-4 */
+.hKBCfs{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;} @media only screen and (max-width:768px){.hKBCfs{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}}
+/* sc-component-id: sc-15u4boq-5 */
+.cwWBOh{max-width:255px;width:100%;} @media only screen and (max-width:768px){.cwWBOh{margin-bottom:20px;}}
+/* sc-component-id: sc-15u4boq-6 */
+.goUXAt{background:linear-gradient(180deg,#ffffff 0%,#f5fafe 100%);padding:11px 30px;text-align:center;font-size:14px;font-weight:500;outline:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;border:none;border-radius:5px;line-height:17px;color:#545f7e;white-space:nowrap;} .goUXAt:hover{background:#ffffff;color:#363f5a;}
+/* sc-component-id: sc-global-1290370386 */
+.WM_GLOBAL_heading{font-family:Special Elite;font-weight:400;font-size:42px;margin-bottom:0.3em;} @media only screen and (max-width:768px){.WM_GLOBAL_heading{font-size:26px;}} .WM_GLOBAL_headingExtraLarge{font-family:Special Elite;font-weight:400;font-size:325px;margin-bottom:0.3em;} @media only screen and (max-width:768px){.WM_GLOBAL_headingExtraLarge{font-size:200px;}} .WM_GLOBAL_headingLarge{font-family:Special Elite;font-weight:400;font-size:200px;margin-bottom:0.3em;} @media only screen and (max-width:768px){.WM_GLOBAL_headingLarge{font-size:75px;}} .WM_GLOBAL_heading120{font-family:Special Elite;font-weight:400;font-size:121px;margin-bottom:0.3em;} @media only screen and (max-width:768px){.WM_GLOBAL_heading120{font-size:56px;}} .WM_GLOBAL_heading96{font-family:Special Elite;font-weight:400;font-size:96px;margin-bottom:0.3em;} @media only screen and (max-width:768px){.WM_GLOBAL_heading96{font-size:55px;}} .WM_GLOBAL_heading72{font-family:Special Elite;font-weight:400;font-size:72px;margin-bottom:0.3em;} @media only screen and (max-width:768px){.WM_GLOBAL_heading72{font-size:42px;}} .WM_GLOBAL_heading54{font-family:Special Elite;font-weight:400;font-size:54px;margin-bottom:0.3em;} @media only screen and (max-width:768px){.WM_GLOBAL_heading54{font-size:34px;}} .WM_GLOBAL_heading42{font-family:Special Elite;font-weight:400;font-size:42px;margin-bottom:0.3em;} @media only screen and (max-width:768px){.WM_GLOBAL_heading42{font-size:26px;}} .WM_GLOBAL_heading32{font-family:Special Elite;font-weight:400;font-size:32px;margin-bottom:0.3em;} @media only screen and (max-width:768px){.WM_GLOBAL_heading32{font-size:24px;}} .WM_GLOBAL_heading24{font-family:Special Elite;font-weight:400;font-size:24px;margin-bottom:0.3em;} @media only screen and (max-width:768px){.WM_GLOBAL_heading24{font-size:inheritpx;}} .WM_GLOBAL_heading20{font-family:Special Elite;font-weight:400;font-size:20px;margin-bottom:0.3em;} @media only screen and (max-width:768px){.WM_GLOBAL_heading20{font-size:20px;}} .WM_GLOBAL_paragraph{font-family:Open Sans;font-weight:400;font-size:18px;line-height:1.4;} .WM_GLOBAL_paragraph18{font-family:Open Sans;font-weight:400;font-size:18px;line-height:1.4;} .WM_GLOBAL_paragraph16{font-family:Open Sans;font-weight:400;font-size:16px;line-height:1.4;} .WM_GLOBAL_paragraph14{font-family:Open Sans;font-weight:400;font-size:14px;line-height:1.4;} .WM_GLOBAL_paragraph12{font-family:Open Sans;font-weight:400;font-size:12px;line-height:1.4;} .WM_GLOBAL_primary-font{font-family:Special Elite;font-weight:400;} .WM_GLOBAL_secondary-font{font-family:Open Sans;font-weight:400;}
+/* sc-component-id: sc-lvczw7-0 */
+.cOKCgB{position:relative;}
+/* sc-component-id: sc-lvczw7-1 */
+.dXYeBk{width:100%;bottom:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;z-index:20;}</style><style data-styled="gvTcCM vRNJx kPdBxq liYurw hijxOr" data-styled-version="4.3.2">
+/* sc-component-id: sc-15za8y8-0 */
+.gvTcCM{color:#FFFFFF;text-align:center;margin-bottom:20px;}.vRNJx{text-align:right;color:#FFFFFF;width:100%;} .vRNJx::after{left:0;} @media only screen and (min-width:1024px){.vRNJx{margin:0 30px 0 0;}} @media only screen and (max-width:1024px){.vRNJx{max-width:initial;width:100%;}}.kPdBxq{color:#FFFFFF;text-align:left;}.liYurw{position:relative;font-size:14px;color:#FFFFFF;text-align:center;} @media only screen and (min-width:801px){}
+/* sc-component-id: sc-jutf6p-0 */
+.hijxOr{height:0px;visibility:hidden;overflow:hidden;} .hijxOr *{height:0;}</style>
+    <link rel="stylesheet" href="rf_fonts/v1/fonts.css">
+    <script src="builtIcons-m4codl29.js" async=""></script>
+    
+  </head>
+  <body>
+    
+    <div id="root">
+        <div class="sc-1vrgkll-0 ivoOXx"><button class="sc-1vrgkll-1 fNGLdp"></button></div><div class="sc-lvczw7-0 cOKCgB"><div class="components-section"><header><div class="sc-1ly7lpo-0 boKZAu"><div id="comp-18d822db58e" class="sc-1ly7lpo-1 jHCZrL"></div><div id="comp-0" class="sc-1ly7lpo-1 jHCZrL"></div><div class="sc-1x4p0l3-0 iMaEUe sc-zyxusa-0 PXsbt"><div class="sc-et7lxk-0 iZASuI"><div type="header" class="WM_GLOBAL_secondary-font header-nav-bar sc-et7lxk-1 ehtzge"><div class="porjectLinksDesktop sc-1akbv98-2 bxeGYB"><div class="header-socials sc-1dv0b3o-0 cbbBlW"><div class="socialIcons sc-1dv0b3o-1 deXuYZ"><div class="link-wrapper "><a aria-label="Social link" class=" link" target="_blank" rel="noopener noreferrer" href="https://t.me/horrorindi"></a></div></div></div></div><div class="sc-1akbv98-12 hApwOg"><div class="mobile-navbar-container sc-1akbv98-10 cUsEs"></div></div></div></div><div class="sc-1x4p0l3-1 btptnG"><div class="sc-1x4p0l3-2 jYUBBZ"><div class="sc-1x4p0l3-3 eyzrsg"><h1 class="sc-1x4p0l3-4 WM_GLOBAL_heading72 sm-word-wrap sc-15za8y8-0 gvTcCM">Shupa Horror</h1><div class="buttons-block sc-1xk50io-0 itzSYI"><div class="sc-1xk50io-1 isaKnF"><div class="WM_GLOBAL_secondary-font buttons-wrapper"><div class="sc-1xk50io-2 fhoUos"><div class="link-wrapper "><a class=" link" href="/#comp-18d7d84437a">Установить</a></div></div></div><div class="WM_GLOBAL_secondary-font buttons-wrapper sc-jutf6p-0 hijxOr"><div class="sc-1xk50io-2 fhoUos"><div class="link-wrapper "><a class=" link" href="/#comp-18d7d84437a">Установить</a></div></div></div></div></div></div></div></div></div></div></header><section><div class="sc-1ly7lpo-0 boKZAu"><div id="comp-18d7d84437a" class="sc-1ly7lpo-1 jHCZrL"></div><div id="comp-1" class="sc-1ly7lpo-1 jHCZrL"></div><div class="sc-hu80p2-0 blQwxs sc-zyxusa-0 PXsbt"><div class="sc-hu80p2-1 iLIWOK sc-ewl9y2-0 klOQRe"><div class="sc-hu80p2-2 faBniA"><h1 class="sc-hu80p2-3 WM_GLOBAL_heading32 sm-word-wrap sc-15za8y8-0 vRNJx">Про Shupa Horror</h1></div><div class="sc-hu80p2-4 jXcQry"><div class="sc-hu80p2-6 cmSLJh"><div class="sc-hu80p2-5 eOZCoc"></div><p class="sc-hu80p2-7 WM_GLOBAL_paragraph18 sm-word-wrap sc-15za8y8-0 kPdBxq"><b>Скачать игру</b></p></div><div class="buttons-block sc-1xk50io-0 itzSYI"><div class="sc-1xk50io-1 isaKnF"><div class="WM_GLOBAL_secondary-font buttons-wrapper"><div class="sc-1xk50io-2 fhoUos"><div class="link-wrapper "><a class=" link" target="_blank" rel="noopener noreferrer" href="http://builder.renderforestsites.com">Android</a></div></div><div class="sc-1xk50io-2 keJdJn"><div class="link-wrapper "><a class=" link" target="_blank" rel="noopener noreferrer" href="http://builder.renderforestsites.com">IOS</a></div></div></div><div class="WM_GLOBAL_secondary-font buttons-wrapper sc-jutf6p-0 hijxOr"><div class="sc-1xk50io-2 fhoUos"><div class="link-wrapper "><a class=" link" target="_blank" rel="noopener noreferrer" href="http://builder.renderforestsites.com">Android</a></div></div><div class="sc-1xk50io-2 keJdJn"><div class="link-wrapper "><a class=" link" target="_blank" rel="noopener noreferrer" href="http://builder.renderforestsites.com">IOS</a></div></div></div></div></div></div></div></div></div></section><footer><div class="sc-1ly7lpo-0 boKZAu"><div id="comp-18d7abb1a87" class="sc-1ly7lpo-1 jHCZrL"></div><div id="comp-2" class="sc-1ly7lpo-1 jHCZrL"></div><div class="sc-1byvlos-0 kjvlIr"><div class="sc-ewl9y2-0 klOQRe"><div class="WM_GLOBAL_secondary-font sc-1byvlos-3 ditDrr"><div class="sc-1lgm12j-2 kByoVl"></div><div class="sc-1byvlos-1 bzTdUd"><p class="sc-1byvlos-2 WM_GLOBAL_secondary-font sm-word-wrap sc-15za8y8-0 liYurw">© All Rights Reserved. HorrorIndi Games</p></div></div></div></div></div></footer></div><div class="sc-lvczw7-1 dXYeBk"><div class="sc-15u4boq-0 bdivov sc-ewl9y2-0 klOQRe"><div class="sc-15u4boq-4 hKBCfs"><div class="sc-15u4boq-5 cwWBOh"><img width="255px" height="60px" alt="Logo" src="../Fw3kz3Fzng5Y.com/renderforest/images/website_maker_images/GM5RiyHFFbBj.svg"></div><p class="sc-15u4boq-2 jhArze"><span class="sc-15u4boq-3 ineHXG">Disclaimer:</span> This website was built with Renderforest, however it is <span class="sc-15u4boq-3 ineHXG">NOT</span> managed by Renderforest.  If you find the content on this website abusive or inappropriate please report right away.</p></div><button type="primary" class="sc-15u4boq-6 goUXAt">Report</button></div></div></div>
     </div>
+    <script src="bundle-m4codl29.js"></script>
+  
 
-    <footer>
-        Designed by <a href="https://github.com/smokedevv" target="_blank">smokedev1</a> | HorrorIndi Games 2024
-    </footer>
-
-</body>
-</html>
+  </body></html>
