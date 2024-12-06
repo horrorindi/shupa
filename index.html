@@ -1,19 +1,3 @@
-<?php
-// Зчитуємо поточне значення лічильника завантажень
-$file = 'download_count.txt';
-if (file_exists($file)) {
-    $count = file_get_contents($file);
-} else {
-    $count = 0;
-}
-
-// Збільшуємо лічильник на 1
-$count++;
-
-// Оновлюємо лічильник у файлі
-file_put_contents($file, $count);
-?>
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -53,9 +37,24 @@ file_put_contents($file, $count);
         Версия билда: 041224-88 Тип: beta
     </p>
     <p>
-        Кількість завантажень: <?php echo $count; ?>
+        Кількість завантажень: <span id="download-count">0</span>
     </p>
-    <a href="rel/build-041224-88.apk" class="btn" download>Android</a>
+    <a href="rel/build-041224-88.apk" class="btn" download onclick="updateDownloadCount()">Android</a>
+
+    <script>
+        // Спроба отримати лічильник із локального сховища
+        let downloadCount = localStorage.getItem('downloadCount') || 0;
+        document.getElementById('download-count').textContent = downloadCount;
+
+        function updateDownloadCount() {
+            // Збільшуємо лічильник
+            downloadCount++;
+            // Зберігаємо в локальному сховищі
+            localStorage.setItem('downloadCount', downloadCount);
+            // Оновлюємо лічильник на сторінці
+            document.getElementById('download-count').textContent = downloadCount;
+        }
+    </script>
 
 </body>
 <footer>
