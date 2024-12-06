@@ -8,8 +8,6 @@
         /* Основные стили страницы */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #4e5d6b, #3f5359); /* Градиентный фон */
-            color: white;
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,19 +15,34 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            color: white;
             text-align: center;
+            background: url('https://example.com/game-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Добавление градиента поверх картинки */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* полупрозрачный черный */
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Тень для текста */
             margin-bottom: 20px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Тень для текста */
+            animation: fadeIn 1.5s ease-out;
         }
 
         p {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-            color: #b0b0b0;
+            font-size: 1.3em;
+            margin-bottom: 50px;
+            color: #ddd;
+            animation: fadeIn 2s ease-out;
         }
 
         /* Контейнер для кнопок */
@@ -37,41 +50,41 @@
             display: flex;
             justify-content: center;
             gap: 30px;
-            animation: fadeIn 1.5s ease-out; /* Анимация для кнопок */
+            animation: fadeIn 2.5s ease-out;
         }
 
         /* Стили для кнопок */
         .install-button {
             padding: 20px 40px;
-            font-size: 1.2em;
+            font-size: 1.5em;
             font-weight: bold;
             text-transform: uppercase;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 15px;
             display: inline-block;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
         }
 
         /* Кнопка для Android */
         .android-button {
             background: linear-gradient(135deg, #3ddc84, #2bbd72);
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
         }
 
         /* Кнопка для iOS */
         .ios-button {
             background: linear-gradient(135deg, #007aff, #005bb5);
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
         }
 
         .install-button:hover {
-            transform: translateY(-5px); /* Поднятие кнопки при наведении */
-            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.4);
+            transform: translateY(-10px); /* Поднятие кнопки при наведении */
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
         }
 
         .install-button:active {
-            transform: translateY(2px); /* Плавное опускание при клике */
+            transform: translateY(5px); /* Плавное опускание при клике */
         }
 
         /* Анимация появления кнопок */
@@ -88,10 +101,10 @@
 
         /* Подпись внизу */
         footer {
-            margin-top: 50px;
-            font-size: 1em;
-            color: #b0b0b0;
-            animation: fadeIn 2s ease-out;
+            margin-top: 80px;
+            font-size: 1.2em;
+            color: #ddd;
+            animation: fadeIn 3s ease-out;
         }
 
         footer a {
@@ -103,9 +116,12 @@
         footer a:hover {
             color: #ffffff;
         }
+
     </style>
 </head>
 <body>
+
+    <div class="overlay"></div> <!-- Полупрозрачный черный фон -->
 
     <h1>Установите нашу игру</h1>
     <p>Выберите свою платформу для скачивания игры:</p>
