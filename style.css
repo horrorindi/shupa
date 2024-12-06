@@ -6,64 +6,121 @@
 }
 
 /* Page Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
 }
 
-.loading-page {
-    max-width: 500px;
-    margin: 0 auto;
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #000428, #004e92); /* Dark gradient */
+    z-index: -1;
+    animation: bgAnimation 10s infinite alternate;
+}
+
+@keyframes bgAnimation {
+    0% {
+        background: linear-gradient(to right, #000428, #004e92);
+    }
+    100% {
+        background: linear-gradient(to left, #1f1c2c, #928DAB);
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+/* Content Styling */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 10;
 }
 
 .game-title {
-    font-size: 36px;
+    font-size: 50px;
     font-weight: bold;
     color: #f04e23;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
     margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .description {
-    font-size: 18px;
+    font-size: 20px;
+    color: #ddd;
     margin-bottom: 30px;
-    color: #ccc;
+    animation: fadeIn 2s ease-in-out;
 }
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Buttons Container */
 .buttons-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
 }
 
 .download-button {
-    background-color: #333;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 10px;
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
     font-size: 16px;
-    width: 200px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .download-button img {
     width: 30px;
-    height: auto;
+    height: 30px;
     margin-right: 10px;
 }
 
 .android {
-    background-color: #34b7f1;
+    background: linear-gradient(to right, #34b7f1, #2a83bb);
+    color: #fff;
 }
 
 .ios {
-    background-color: #000;
+    background: linear-gradient(to right, #000, #333);
+    color: #fff;
 }
 
-.android:hover, .ios:hover {
-    opacity: 0.8;
+.download-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.download-button:active {
+    transform: translateY(2px);
+}
+
+.android:hover {
+    background: linear-gradient(to right, #0288d1, #01579b);
+}
+
+.ios:hover {
+    background: linear-gradient(to right, #333, #000);
 }
